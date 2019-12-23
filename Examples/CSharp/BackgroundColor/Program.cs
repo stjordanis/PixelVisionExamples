@@ -21,6 +21,7 @@
 using System;
 using System.Globalization;
 using System.IO;
+using PixelVision8.Examples;
 using PixelVision8.Runner;
 
 namespace Desktop
@@ -49,8 +50,20 @@ namespace Desktop
                 root = root.Replace("/MonoBundle/Content", "/Resources/Content");
             }
             
-            using (var game = new LuaRunner(root))
+            using (var game = new ExampleRunner(root))
                 game.Run();
+        }
+    }
+
+    class ExampleRunner : CSharpRunner
+    {
+        public ExampleRunner(string gamePath) : base(gamePath)
+        {
+        }
+
+        protected override void AddGameChip()
+        {
+            tmpEngine.ActivateChip("GameChip", new BackgroundColorExample());
         }
     }
 }
