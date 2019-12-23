@@ -45,7 +45,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Example.cs" />
+    <Compile Include="DrawTilemapExample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,8 +78,36 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\*.*">
-      <Link>Content\%(FileName)%(Extension)</Link>
+    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\code.lua">
+      <Link>Content\code.lua</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\colors.png">
+      <Link>Content\colors.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\data.json">
+      <Link>Content\data.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\info.json">
+      <Link>Content\info.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\large.font.png">
+      <Link>Content\large.font.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\saves.json">
+      <Link>Content\saves.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\sprites.png">
+      <Link>Content\sprites.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\tilemap.json">
+      <Link>Content\tilemap.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

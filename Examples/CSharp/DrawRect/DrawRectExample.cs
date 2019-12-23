@@ -1,5 +1,5 @@
 ﻿/**
-Pixel Vision 8 - WriteSaveData Example
+Pixel Vision 8 - DrawRect Example
 Copyright(C) 2017, Pixel Vision 8 (http://pixelvision8.com)
 Created by Jesse Freeman(@jessefreeman)
 
@@ -15,17 +15,26 @@ using PixelVision8.Engine.Chips;
 
 namespace PixelVision8.Examples
 {
-    class Example : GameChip
+    class DrawRectExample : GameChip
     {
         public override void Init()
-        {
+        { 
+            // Draw a 100 x 100 pixel rect to the display
+            DrawRect(16, 16, 100, 100, 5, DrawMode.TilemapCache);
 
         }
 
         public override void Draw()
-        {
+        { 
             // Redraw the display
             RedrawDisplay();
+
+            // Draw a rect to the sprite layer
+            DrawRect(12, 12, 25, 25, 14, DrawMode.Sprite);
+
+            // Draw a rect to the sprite below layer
+            DrawRect(100, 100, 25, 25, 15, DrawMode.SpriteBelow);
+
         }
 
     }

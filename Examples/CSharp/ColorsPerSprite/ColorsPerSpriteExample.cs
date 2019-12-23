@@ -1,5 +1,5 @@
 ﻿/**
-Pixel Vision 8 - WriteSaveData Example
+Pixel Vision 8 - ColorsPerSprite Example
 Copyright(C) 2017, Pixel Vision 8 (http://pixelvision8.com)
 Created by Jesse Freeman(@jessefreeman)
 
@@ -15,18 +15,26 @@ using PixelVision8.Engine.Chips;
 
 namespace PixelVision8.Examples
 {
-    class Example : GameChip
+    class ColorsPerSpriteExample : GameChip
     {
+
+        // Store the CPS value
+        private int cps;
+
         public override void Init()
         {
-
+            // Get the colors per sprite value
+            cps = ColorsPerSprite();
         }
 
         public override void Draw()
         {
-            // Redraw the display
-            RedrawDisplay();
-        }
+            // Clear the display
+            Clear();
 
+            // Draw the cps value to the display
+            DrawText("Colors Per Sprite = " + cps, 8, 8, DrawMode.Sprite, "large", 15);
+
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿/**
-Pixel Vision 8 - WriteSaveData Example
+Pixel Vision 8 - DrawText Example
 Copyright(C) 2017, Pixel Vision 8 (http://pixelvision8.com)
 Created by Jesse Freeman(@jessefreeman)
 
@@ -15,10 +15,15 @@ using PixelVision8.Engine.Chips;
 
 namespace PixelVision8.Examples
 {
-    class Example : GameChip
+    class DrawTextExample : GameChip
     {
         public override void Init()
         {
+            // Draw the large font as tiles
+            DrawText("Large Font - Tiles", 1, 1, DrawMode.Tile, "large", 5);
+
+            // Draw the medium font to the tilemap cache and change the letter spacing
+            DrawText("Medium Font - Tilemap Cache", 8, 16, DrawMode.TilemapCache, "medium", 15, -3);
 
         }
 
@@ -26,6 +31,10 @@ namespace PixelVision8.Examples
         {
             // Redraw the display
             RedrawDisplay();
+
+            // Draw the small font as sprites and change the letter spacing
+            DrawText("Small Font - Sprites", 8, 24, DrawMode.Sprite, "small", 14, -4);
+
         }
 
     }

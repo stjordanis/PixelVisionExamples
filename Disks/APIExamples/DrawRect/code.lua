@@ -11,7 +11,6 @@
   https://www.pixelvision8.com/getting-started
 ]]--
 
-
 function Init()
 
   -- Draw a 100 x 100 pixel rect to the display
