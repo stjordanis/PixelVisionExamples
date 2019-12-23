@@ -62,7 +62,7 @@ namespace Desktop
 
         protected override void AddGameChip()
         {
-            tmpEngine.ActivateChip("GameChip", new Example());
+            tmpEngine.ActivateChip("GameChip", new CalculateIndexExample());
         }
     }
 }

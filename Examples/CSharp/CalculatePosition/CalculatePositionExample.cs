@@ -1,5 +1,5 @@
 ﻿/**
-Pixel Vision 8 - WriteSaveData Example
+Pixel Vision 8 - CalculatePosition Example
 Copyright(C) 2017, Pixel Vision 8 (http://pixelvision8.com)
 Created by Jesse Freeman(@jessefreeman)
 
@@ -15,10 +15,25 @@ using PixelVision8.Engine.Chips;
 
 namespace PixelVision8.Examples
 {
-    class Example : GameChip
+    class CalculatePositionExample : GameChip
     {
+        // A 1D array of example values
+        private string[] exampleGrid =
+        {
+            "A", "B", "C",
+            "D", "E", "F",
+            "G", "H", "I",
+        };
+
         public override void Init()
         {
+            var index = 4;
+
+            // Calculate the center index based on a grid with 3 columns
+            var position = CalculatePosition(index, 3);
+
+            // Draw the index and value to the display
+            DrawText("Position "+position.X+","+position.Y+" at Index "+index+" is "+exampleGrid[index], 1, 1, DrawMode.Tile, "large", 15);
 
         }
 

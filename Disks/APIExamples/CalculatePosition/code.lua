@@ -1,5 +1,5 @@
 --[[
-  Pixel Vision 8 - New Template Script
+  Pixel Vision 8 - CalculatePosition Example
   Copyright (C) 2017, Pixel Vision 8 (http://pixelvision8.com)
   Created by Jesse Freeman (@jessefreeman)
 
