@@ -31,12 +31,12 @@ namespace PixelVision8.Examples
             canvas = new Canvas(256, 240, this);
 
             // Set the canvas stroke to a white 1x1 pixel brush
-            canvas.SetStroke(new []{15}, 1, 1);
+            canvas.SetStroke(new[] { 15 }, 1, 1);
 
         }
 
         public override void Update(int timeDelta)
-        { 
+        {
 
             // Update position B with the MousePosition
             pointB = MousePosition();

@@ -23,7 +23,7 @@ namespace PixelVision8.Examples
         private Canvas canvas;
 
         public override void Init()
-        { 
+        {
             // Create a canvas to visualize the screen sizes
             canvas = new Canvas(256, 240, this);
 
@@ -34,24 +34,24 @@ namespace PixelVision8.Examples
             var sizeB = Display();
 
             // Draw the two sizes to the display
-            DrawText("Full Display Size " + sizeA.X + "x" +sizeB.Y, 1, 1, DrawMode.Tile, "large", 15);
-            DrawText("Visible Display Size " + sizeB.X + "x" +sizeB.Y, 1, 2, DrawMode.Tile, "large", 15);
+            DrawText("Full Display Size " + sizeA.X + "x" + sizeB.Y, 1, 1, DrawMode.Tile, "large", 15);
+            DrawText("Visible Display Size " + sizeB.X + "x" + sizeB.Y, 1, 2, DrawMode.Tile, "large", 15);
 
             // Set the canvas stroke to white
-            canvas.SetStroke(new int[]{ 15}, 1, 1);
+            canvas.SetStroke(new int[] { 15 }, 1, 1);
 
             // Set the fill color to 5 and draw the full size square
-            canvas.SetPattern(new int[] {5}, 1, 1);
+            canvas.SetPattern(new int[] { 5 }, 1, 1);
             canvas.DrawSquare(8, 32, sizeA.X / 2 + 8, sizeA.Y / 2 + 32, true);
 
             // Set the fill color to 0 and draw the visible size square
-            canvas.SetPattern(new int[] {0}, 1, 1);
+            canvas.SetPattern(new int[] { 0 }, 1, 1);
             canvas.DrawSquare(8, 32, sizeB.X / 2 + 8, sizeB.Y / 2 + 32, true);
 
         }
 
         public override void Draw()
-        { 
+        {
             // Redraw the display
             RedrawDisplay();
 

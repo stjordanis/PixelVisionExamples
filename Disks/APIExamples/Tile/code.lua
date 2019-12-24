@@ -24,7 +24,7 @@ local max = 3
 -- Current palette ID
 local paletteID = 0
 
--- Loop through all of the tiles and find the ones that have sprites
+-- Store  the tilemap dimensions
 local mapSize = TilemapSize()
 local totalTiles = mapSize.x * mapSize.y
 

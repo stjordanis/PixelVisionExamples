@@ -18,6 +18,7 @@
 // Shawn Rakowski - @shwany
 //
 
+using PixelVision8.Examples;
 using System;
 using System.Globalization;
 using System.IO;
@@ -61,7 +62,7 @@ namespace Desktop
 
         protected override void AddGameChip()
         {
-            tmpEngine.ActivateChip("GameChip", new Example());
+            tmpEngine.ActivateChip("GameChip", new RepeatExample());
         }
     }
 }

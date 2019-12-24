@@ -27,7 +27,7 @@ namespace PixelVision8.Examples
         private Point pos;
 
         public override void Update(int timeDelta)
-        { 
+        {
             // Calculate the next position
             nextPos = nextPos + (speed * (timeDelta / 100f));
 
@@ -37,7 +37,7 @@ namespace PixelVision8.Examples
         }
 
         public override void Draw()
-        { 
+        {
             // Redraw the display
             RedrawDisplay();
 
@@ -48,8 +48,8 @@ namespace PixelVision8.Examples
             DrawSprite(377, 36, pos.Y);
 
             // Draw the x,y position of each sprite
-            DrawText("("+MathUtil.FloorToInt(nextPos)+",8)", pos.X + 8, 8, DrawMode.Sprite, "large", 15);
-            DrawText("(36,"+ MathUtil.FloorToInt(nextPos)+")", 44, pos.Y, DrawMode.Sprite, "large", 15);
+            DrawText("(" + MathUtil.FloorToInt(nextPos) + ",8)", pos.X + 8, 8, DrawMode.Sprite, "large", 15);
+            DrawText("(36," + MathUtil.FloorToInt(nextPos) + ")", 44, pos.Y, DrawMode.Sprite, "large", 15);
 
         }
     }

@@ -24,7 +24,7 @@ namespace PixelVision8.Examples
 
         // Create an array of colors and an index value to point to the currently selected color
         private int colorIndex = 1;
-        private string[] colors = {"#000000", "#ffffff"};
+        private string[] colors = { "#000000", "#ffffff" };
 
         public override void Init()
         {
@@ -37,14 +37,14 @@ namespace PixelVision8.Examples
         }
 
         public override void Update(int timeDelta)
-        { 
+        {
             // Increase the time value base on the timeDelta between the last frame
             time = time + timeDelta;
 
             // Text to see if time is greater than the delay
-            if(time > delay)
+            if (time > delay)
             {
-                
+
                 // Increase the color index by 1 and reset if it's greater than the color array
                 colorIndex = Repeat(colorIndex + 1, colors.Length);
 
@@ -59,7 +59,7 @@ namespace PixelVision8.Examples
         }
 
         public override void Draw()
-        { 
+        {
             // Redraw the display
             RedrawDisplay();
 

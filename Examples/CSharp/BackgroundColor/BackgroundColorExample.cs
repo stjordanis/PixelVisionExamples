@@ -17,7 +17,7 @@ namespace PixelVision8.Examples
         {
             //  Get the current background color
             var defaultColor = BackgroundColor();
-            
+
             // Draw the default background color ID to the display
             DrawText("Default Color " + defaultColor, 1, 1, DrawMode.Tile, "large", 15);
 

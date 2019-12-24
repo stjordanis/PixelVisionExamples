@@ -19,7 +19,7 @@ namespace PixelVision8.Examples
 {
     class DrawSpriteBlock : GameChip
     {
-        
+
         // Use floats to store the subpixel position
         private float speed = 5;
         private float nextPos;

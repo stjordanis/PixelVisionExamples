@@ -18,10 +18,10 @@
 // Shawn Rakowski - @shwany
 //
 
+using PixelVision8.Runner;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using PixelVision8.Runner;
 
 namespace Desktop
 {
@@ -30,7 +30,7 @@ namespace Desktop
 
         // Store the path to the game's files
         private readonly string gamePath;
-        
+
         /// <summary>
         ///     This constructor saves the path to the game's files and kicks off the base constructor
         /// </summary>
@@ -39,7 +39,7 @@ namespace Desktop
         {
             this.gamePath = gamePath;
         }
-        
+
         /// <summary>
         ///     This is called when the runner first starts up.
         /// </summary>
@@ -48,14 +48,14 @@ namespace Desktop
 
             // Configure the runner
             ConfigureRunner();
-            
+
             // Manually override scale on boot up
             Scale(1);
 
             // Load the game
             LoadDefaultGame();
         }
-        
+
         /// <summary>
         ///     This mthod manually loads the game file's binary data then configures the engine and processes the files.
         /// </summary>
@@ -68,15 +68,15 @@ namespace Desktop
                 "png",
                 "json"
             };
-            
+
             // Create a new dictionary to store the file binary data
             var gameFiles = new Dictionary<string, byte[]>();
-            
+
             // Get only the files we need from the directory base on their extension above.
             var files = from p in Directory.EnumerateFiles(gamePath)
-                where fileExtensions.Any(val => p.EndsWith(val))
-                select p;
-            
+                        where fileExtensions.Any(val => p.EndsWith(val))
+                        select p;
+
             // Loop through each file in the list
             foreach (string file in files)
             {

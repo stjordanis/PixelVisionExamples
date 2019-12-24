@@ -25,7 +25,7 @@ function Update(timeDelta)
   -- Loop through all the buttons
   for i = 1, #buttons do
 
-    -- Test if the current mouse button ID is down and save it to the pressedButtons array
+    -- Test if the current mouse button ID is down and saves it to the pressedButtons array
     if(MouseButton((i - 1), InputState.Down)) then
       table.insert(pressedButtons, buttons[i])
     end

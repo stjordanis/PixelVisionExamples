@@ -29,7 +29,7 @@ namespace PixelVision8.Examples
         };
 
         public override void Init()
-        { 
+        {
             // Draw the sprite data to the tilemap cache
             DrawText("Tilemap Cache", 1, 3, DrawMode.Tile, "large", 15);
             DrawPixels(pixelData, 8, 32, 8, 8, false, false, DrawMode.TilemapCache);
@@ -43,7 +43,7 @@ namespace PixelVision8.Examples
         }
 
         public override void Draw()
-        { 
+        {
             // Redraw the display
             RedrawDisplay();
 

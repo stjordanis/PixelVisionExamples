@@ -1,5 +1,5 @@
 --[[
-  Pixel Vision 8 - Tilemap Example
+  Pixel Vision 8 - TilemapSize Example
   Copyright (C) 2017, Pixel Vision 8 (http://pixelvision8.com)
   Created by Jesse Freeman (@jessefreeman)
 

@@ -11,9 +11,9 @@ Learn more about making Pixel Vision 8 games at
 https://www.pixelvision8.com/getting-started
 **/
 
-using System;
 using Microsoft.Xna.Framework;
 using PixelVision8.Engine.Chips;
+using System;
 
 namespace PixelVision8.Examples
 {
@@ -24,7 +24,7 @@ namespace PixelVision8.Examples
 
         // We'll store the display's boundaries here
         private Point display;
-        
+
         // Create a delay and time value
         private int delay = 2000;
         private int time = 0;
@@ -42,12 +42,12 @@ namespace PixelVision8.Examples
         }
 
         public override void Update(int timeDelta)
-        { 
+        {
             // Increase the time value base on the timeDelta between the last frame
             time = time + timeDelta;
 
-                       // Text to see if time is greater than the delay
-            if(time > delay)
+            // Text to see if time is greater than the delay
+            if (time > delay)
             {
 
                 // Toggle the clear flag
@@ -60,19 +60,21 @@ namespace PixelVision8.Examples
         }
 
         public override void Draw()
-        { 
+        {
             // Test the clear flag and do a full or partial clear based on the value
             if (clearFlag == true)
             {
                 Clear();
-            } else {
+            }
+            else
+            {
                 Clear(16, 16, display.X - 32, display.Y - 32);
             }
 
             // Perform the next block of code 10 times
             for (int i = 0; i < 10; i++)
             {
-             
+
                 // Assign random values to each of these variable
                 charID = random.Next(32, 126);
                 x = random.Next(0, display.X);

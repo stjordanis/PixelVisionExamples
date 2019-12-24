@@ -22,14 +22,14 @@ namespace PixelVision8.Examples
         private int time;
         private int delay = 300;
 
-        public override void Update( int timeDelta)
-        { 
+        public override void Update(int timeDelta)
+        {
             // Add the time delay to the time
             time = time + timeDelta;
 
             // Check if time is greater than the delay
-            if(time > delay)
-            { 
+            if (time > delay)
+            {
 
                 // Increase the counter by 1
                 counter = Clamp(counter + 1, 0, 10);

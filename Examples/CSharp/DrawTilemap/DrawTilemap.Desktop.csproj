@@ -78,10 +78,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\code.lua">
-      <Link>Content\code.lua</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="..\..\..\Disks\APIExamples\DrawTilemap\colors.png">
       <Link>Content\colors.png</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

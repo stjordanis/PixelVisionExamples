@@ -11,8 +11,8 @@ Learn more about making Pixel Vision 8 games at
 https://www.pixelvision8.com/getting-started
 **/
 
-using System;
 using PixelVision8.Engine.Chips;
+using System;
 
 namespace PixelVision8.Examples
 {
@@ -43,6 +43,5 @@ namespace PixelVision8.Examples
             //  TODO need a utility to write this to the file system since it's not run in the main engine
 
         }
-
     }
 }

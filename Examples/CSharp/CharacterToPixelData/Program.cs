@@ -18,10 +18,10 @@
 // Shawn Rakowski - @shwany
 //
 
+using PixelVision8.Examples;
 using System;
 using System.Globalization;
 using System.IO;
-using PixelVision8.Examples;
 
 namespace Desktop
 {

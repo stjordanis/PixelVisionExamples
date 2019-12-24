@@ -29,13 +29,13 @@ namespace PixelVision8.Examples
             // Loop through all of the pixels
             for (int i = 0; i < pixelData.Length; i++)
             {
-                 
-                // Test to see if the pixel is set to the color ID 0
-                if(pixelData[i] == 0)
-                { 
 
-                // Change the color ID to 14
-                pixelData[i] = 14;
+                // Test to see if the pixel is set to the color ID 0
+                if (pixelData[i] == 0)
+                {
+
+                    // Change the color ID to 14
+                    pixelData[i] = 14;
 
                 }
 

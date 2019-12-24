@@ -33,7 +33,7 @@ namespace PixelVision8.Examples
             var position = CalculatePosition(index, 3);
 
             // Draw the index and value to the display
-            DrawText("Position "+position.X+","+position.Y+" at Index "+index+" is "+exampleGrid[index], 1, 1, DrawMode.Tile, "large", 15);
+            DrawText("Position " + position.X + "," + position.Y + " at Index " + index + " is " + exampleGrid[index], 1, 1, DrawMode.Tile, "large", 15);
 
         }
 

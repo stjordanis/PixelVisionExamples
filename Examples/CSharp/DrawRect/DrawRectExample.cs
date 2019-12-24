@@ -18,14 +18,14 @@ namespace PixelVision8.Examples
     class DrawRectExample : GameChip
     {
         public override void Init()
-        { 
+        {
             // Draw a 100 x 100 pixel rect to the display
             DrawRect(16, 16, 100, 100, 5, DrawMode.TilemapCache);
 
         }
 
         public override void Draw()
-        { 
+        {
             // Redraw the display
             RedrawDisplay();
 

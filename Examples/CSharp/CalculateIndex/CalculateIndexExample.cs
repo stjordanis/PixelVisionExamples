@@ -17,7 +17,7 @@ namespace PixelVision8.Examples
 {
     class CalculateIndexExample : GameChip
     {
-        
+
         // A 1D array of example values
         private string[] exampleGrid =
         {
@@ -27,7 +27,7 @@ namespace PixelVision8.Examples
         };
 
         public override void Init()
-        { 
+        {
             // Calculate the center index based on a grid with 3 columns
             var index = CalculateIndex(1, 1, 3);
 
@@ -38,7 +38,7 @@ namespace PixelVision8.Examples
         }
 
         public override void Draw()
-        { 
+        {
             // Redraw the display
             RedrawDisplay();
         }

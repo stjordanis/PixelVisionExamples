@@ -31,8 +31,8 @@ namespace PixelVision8.Examples
             nextPos = nextPos + (speed * (timeDelta / 100f));
 
             // Need to convert the nextPoint to an int, so we'll save it in a point
-            pos.X = (int) nextPos;
-            pos.Y = (int) nextPos;
+            pos.X = (int)nextPos;
+            pos.Y = (int)nextPos;
 
             // Update the scroll position
             ScrollPosition(pos.X);
