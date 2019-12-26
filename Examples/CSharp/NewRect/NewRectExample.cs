@@ -18,14 +18,20 @@ namespace PixelVision8.Examples
 {
     class NewRectExample : GameChip
     {
-        // Create a rectangle
-        Rectangle rectA = new Rectangle(8, 8, 128, 128);
+        // Store the rectangle
+        Rectangle rectA;
 
         // This will store the mouse position
         private Point mousePos;
 
         // This will store the collision state
         private bool collision = false;
+
+        public override void Init()
+        {
+            // Use the game's NewRect() to create a rectangle instance
+            rectA = NewRect(8, 8, 128, 128);
+        }
 
         public override void Update(int timeDelta)
         {
