@@ -18,16 +18,12 @@ function Init()
 
 end
 
-function Update(timeDelta)
-
-  -- Draw the FPS value to the display on every frame
-  DrawText(ReadFPS(), 40, 8, DrawMode.Sprite, "large", 14)
-
-end
-
 function Draw()
 
   -- Redraw the display
   RedrawDisplay()
+
+  -- Draw the FPS value to the display on every frame
+  DrawText(ReadFPS(), 40, 8, DrawMode.Sprite, "large", 14)
 
 end
